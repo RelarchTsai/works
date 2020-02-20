@@ -674,7 +674,7 @@ header h1 a {
   }
   .l-works_box {
     width: 100%;
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .l-works_cont {
     opacity: 1;
