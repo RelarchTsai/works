@@ -523,8 +523,8 @@ header h1 a {
 
 @media (max-width: 1350px) {
   .l-skills:before {
-    width: calc(644px * 0.6);
-    height: calc(142px * 0.6);
+    width: calc(644px * 0.5);
+    height: calc(142px * 0.5);
   }
 }
 @media (max-width: 1000px) {
