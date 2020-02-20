@@ -1,0 +1,24 @@
+@import "reset";
+@import "variable";
+@import "mixin";
+@import "extend";
+@import "base";//全站設定
+@import "layout";//全站公用佈局
+@import "grid";//全站隔線
+@import "component";//全站元件
+@import "helps";//全站工具
+// @import "vendors"//全站插件
+
+//如果專案太大可以建立資料夾 在把scss細分 ex 建立layout資料夾 layout/header  layout/grid
+
+//class命名規則 拋棄語意化命名 改以功能性質命名 並帶前綴詞
+//命名順序 前綴詞 - Black(區塊) _ 元素（Element) -- 樣式（Modifire）
+
+//l- layout
+//e- element
+//col- grid
+//h- helps
+
+//ex: .l-menu_item--active;
+//ex: .e-btn .e-btn--normal;
+

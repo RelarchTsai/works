@@ -1,0 +1,75 @@
+.e-relarchPhoto{
+    width: 38%;
+    height: auto;
+    margin: 0 0 60px 3rem;
+    box-shadow: 18px 18px 0px $main-color;
+}
+@include banner1350{
+    .e-relarchPhoto{
+        width: 30%;
+        margin:0 auto 3rem;
+        @include dvt;
+    }
+}
+@include mobile{
+    .e-relarchPhoto{
+        width: 80%;
+    }    
+}
+
+.e-btn{
+    max-width: 350px;
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+    color:#fff;
+    background: $main-color;
+    display: block;
+    border-radius: 4px;
+    font-size: 24px;
+    transition: .3s;
+    font-family: 'Montserrat Alternates',Arial, Helvetica, sans-serif;
+    &:hover{
+        opacity: .6;
+    }
+
+}
+.e-gotop{
+    width: 75px;
+    height: 75px;
+    border:1px solid $main-color;
+    background: #fff;
+    font-family: 'Montserrat Alternates';
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    bottom: 43px;
+    right:80px;letter-spacing: 1px;
+    z-index: 10;
+    color: $main-color;
+    transform: rotate(45deg);
+    transition: .3s;
+    &:hover{
+        background: $main-color;
+        color: #fff;
+        bottom: 46px;
+        transition: .3s;
+    }
+    span{
+        display: block;
+        transform: rotate(-45deg);
+        position: absolute;
+        top:28px;left: 25px;
+    }
+}
+@include mobile{
+   .e-gotop{
+       width: 50px;
+       height: 50px;
+       right: 10px;
+       bottom: 56px;
+       span{
+           top:15px;left: 10px;
+       }
+   } 
+}

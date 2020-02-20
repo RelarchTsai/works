@@ -1,0 +1,21 @@
+.col-container{
+	margin: 0 auto;
+	max-width: 1006px;
+	padding-left: ($gutter / 2);
+	padding-right: ($gutter / 2);
+}
+
+.col-row{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -($gutter / 2);
+	margin-right: -($gutter / 2);
+}
+
+.col-4{
+	width: calc((98% - 30px) / 4);
+	margin-right: 10px;
+	@include dv;
+	&:last-child{margin-right: 0;}
+}
+

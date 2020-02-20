@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- html meta 屬性設定 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="title" content="Relarch Tsai個人作品集">
+	
+	<meta name="description" content="Relarch Tsai個人作品集">
+	<meta name="Copyright" content="Relarch Tsai">
+
+    <!-- 設定給手機device用 -->
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+
+
+	<title>Relarch web</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<!-- {template header} -->
+
+<header>
+    <h1>
+        <a href="index.html">
+            Relarch
+        </a>
+    </h1>
+    <div class="m-nav">
+        <div class="o-grid__item">
+            <button class="c-hamburger c-hamburger--htx">
+                <span>toggle menu</span>
+            </button>
+        </div>
+    </div>
+    <div class="l-nav">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <div class="link-box">
+                        <span>about</span>
+                        <span>關於我</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="works.html">
+                    <div class="link-box">
+                        <span>works</span>
+                        <span>作品集</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.cakeresume.com/s--YrtP4-TPV7Tua_LaJxJHRg--/phoebeminguq" target="_blank">
+                    <div class="link-box">
+                        <span>resume</span>
+                        <span>個人履歷</span>
+                    </div>
+                </a>
+            </li>
+            <li style="display: none;">
+                <a href="#">
+                    <div class="link-box">
+                        <span>contact</span>
+                        <span>聯絡方式</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<script>
+//漢堡
+$(window).load(function(){
+    var toggles = document.querySelectorAll(".c-hamburger");
+    for (var i = toggles.length - 1; i >= 0; i--) {
+        var toggle = toggles[i];
+        toggleHandler(toggle);
+    };
+    function toggleHandler(toggle) {
+        toggle.addEventListener( "click", function(e) {
+            e.preventDefault();
+            if (this.classList.contains("is-active") === true) {
+                this.classList.remove("is-active");
+                // $(".side-nav-wrap").stop().animate({left:"-250px"},500);//點漢堡側邊欄左右滑動
+                $(".l-nav").slideUp();
+            }
+            else {
+                this.classList.add("is-active");
+                // $(".side-nav-wrap").stop().animate({left:"0"},500);//點漢堡側邊欄左右滑動
+                $(".l-nav").slideDown();
+            }
+        });
+    }
+});
+
+
+</script>
+    <div class="l-frame">
+        <div class="l-works_wrap">
+            <h2>web</h2>
+            <div class="l-works_group">
+                <a href="https://www.globalone.com.tw/index" target="_blank" class="l-works_box">
+                    <div class="l-works_img"
+                        style="background-image: url(https://i.imgur.com/nk6Jmrg.jpg);">
+                        <div class="l-works_cont">
+                            <h3>世界明珠網站</h3>
+                            <p>負責此網站的前端切版作業，與後台前端切版作業</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.boldnconfident.info/" target="_blank" class="l-works_box">
+                    <div class="l-works_img"
+                        style="background-image: url(https://images.cakeresume.com/EQ0ZD/phoebeminguq/48f8448b-eae6-4f3b-a3fe-973db3286f07.png);">
+                        <div class="l-works_cont">
+                            <h3>晶亮瓷彈性膠原蛋白增生劑</h3>
+                            <p>負責此網站的視覺設計與前端切版作業</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://adulthealth.com.tw/event/2019AW" target="_blank" class="l-works_box">
+                    <div class="l-works_img"
+                        style="background-image: url(https://i.imgur.com/Zj7E7jO.jpg);">
+                        <div class="l-works_cont">
+                            <h3>成人三疾病活動網站</h3>
+                            <p>負責此網站的視覺設計與前端切版作業，與後台前端切版作業</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.fddesign.com.tw/index" target="_blank" class="l-works_box">
+                    <div class="l-works_img"
+                        style="background-image: url(https://i.imgur.com/VtRyWAk.jpg);">
+                        <div class="l-works_cont">
+                            <h3>峰典室內設計</h3>
+                            <p>負責此網站首頁除外的視覺設計與前端切版作業，與後台前端切版作業</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.matrixartistry.com/" target="_blank" class="l-works_box">
+                    <div class="l-works_img"
+                        style="background-image: url(https://i.imgur.com/Qhb4lj0.jpg);">
+                        <div class="l-works_cont">
+                            <h3>核果管理顧問官網</h3>
+                            <p>負責此網站視覺設計與前端切版作業，與後台前端切版作業</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="l-works_box h-nopointer">
+                    <div class="l-works_img"
+                        style="background-image: url(https://i.imgur.com/DwGxXZ2.jpg);">
+                        <div class="l-works_cont">
+                            <h3>無框電信 解放你的電信自由(活動已結束)</h3>
+                            <p>負責此網站的視覺設計與前端切版作業</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://onepigeon.com.tw/" target="_blank" class="l-works_box">
+                    <div class="l-works_img" style="background-image: url(https://i.imgur.com/tlj26zl.jpg);">
+                        <div class="l-works_cont">
+                            <h3>一鴿文創</h3>
+                            <p>負責此網站的視覺設計</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <h2>app</h2>
+            <div class="l-works_group">
+                <a href="https://play.google.com/store/apps/details?id=tw.com.cosmos.ruisui.app&hl=zh_TW" target="_blank" class="l-works_box">
+                    <div class="l-works_img"
+                        style="background-image: url(https://i.imgur.com/uGtMNya.jpg);">
+                        <div class="l-works_cont">
+                            <h3>瑞穗天合國際觀光飯店app</h3>
+                            <p>負責此app的網站設計與前端切版作業(jquery mobile)，與後台前端建置</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="l-works_box h-nopointer">
+                    <div class="l-works_img"
+                        style="background-image: url(https://images.cakeresume.com/EQ0ZD/phoebeminguq/2ee9c276-9e08-4c0d-8dea-69863920edbc.png);">
+                        <div class="l-works_cont">
+                            <h3>oppo門市銷售系統app</h3>
+                            <p>負責此app的網站設計與前端切版作業(jquery mobile)，與後台前端建置</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.tsunny.tsunny&hl=zh_TW" target="_blank" class="l-works_box">
+                    <div class="l-works_img"
+                        style="background-image: url(https://i.imgur.com/gMEaxAx.jpg);">
+                        <div class="l-works_cont">
+                            <h3>解憂福利社app</h3>
+                            <p>負責此app的網站設計</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <h2>illustration</h2>
+            <div class="l-works_group">
+                <a href="#" target="_blank" class="l-works_box h-nopointer">
+                    <div class="l-works_img"
+                        style="background-image: url(https://images.cakeresume.com/EQ0ZD/phoebeminguq/1f7131e1-6f32-4708-887f-535ef2828085.png);">
+                        <div class="l-works_cont">
+                            <h3>解憂福利社主視覺插圖繪製</h3>
+                            <p>使用手繪版繪製，用於名片與APP視覺等，千陽科技版權所有</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="l-works_box h-nopointer">
+                    <div class="l-works_img"
+                        style="background-image: url(https://images.cakeresume.com/EQ0ZD/phoebeminguq/39fd3731-65be-4a3a-8e62-05da019cfb28.png);">
+                        <div class="l-works_cont">
+                            <h3>解憂福利社金幣繪製</h3>
+                            <p>使用photoshop繪製，千陽科技版權所有</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank" class="l-works_box h-nopointer">
+                    <div class="l-works_img"
+                        style="background-image: url(https://images.cakeresume.com/EQ0ZD/phoebeminguq/929be30e-4bdb-4ff1-8c74-47e5c3a70414.png);">
+                        <div class="l-works_cont">
+                            <h3>博弈女郎</h3>
+                            <p>使用photoshop與clip studio繪製</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" target="_blank"  class="l-works_box h-nopointer">
+                    <div class="l-works_img" style="background-image: url(https://images.cakeresume.com/EQ0ZD/phoebeminguq/6af1e8f0-cbeb-4e09-aa3f-6ed2b97d0851.png);">
+                        <div class="l-works_cont">
+                            <h3>實況主人像</h3>
+                            <p>使用photoshop與SAI繪製，千陽科技版權所有</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://i.imgur.com/kN1Ouyt.jpg" class="l-works_box" target="_blank">
+                    <div class="l-works_img" style="background-image: url(https://i.imgur.com/kN1Ouyt.jpg);">
+                        <div class="l-works_cont">
+                            <h3>繪圖練習</h3>
+                            <p>使用photoshop與SAI繪製</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://i.imgur.com/lOYgSFA.jpg" class="l-works_box" target="_blank">
+                    <div class="l-works_img"
+                        style="background-image: url(https://i.imgur.com/lOYgSFA.jpg);">
+                        <div class="l-works_cont">
+                            <h3>繪圖練習</h3>
+                            <p>使用photoshop與clip SAI繪製</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="l-works_box h-nopointer" target="_blank">
+                    <div class="l-works_img" style="background-image: url(https://i.imgur.com/McFhHIf.png);">
+                        <div class="l-works_cont">
+                            <h3>場景繪製</h3>
+                            <p>使用photoshop繪製，千陽科技版權所有</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+      <!-- template footer -->
+    <footer>
+        Copyright © 2020 Relarch Tsai All rights reserved
+    </footer>
+    <a href="" class="e-gotop gotop"><span>top</span></a>
+    <script>
+        $('.gotop').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                return false;
+            });
+    </script>
+
+</body>
+</html>

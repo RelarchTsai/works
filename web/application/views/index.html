@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- html meta 屬性設定 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="Relarch Tsai個人作品集">
+    
+    <meta name="description" content="Relarch Tsai個人作品集">
+    <meta name="Copyright" content="Relarch Tsai">
+
+    <!-- 設定給手機device用 -->
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=yes">
+
+	<title>Relarch web</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+<!-- {template header} -->
+
+<header>
+    <h1>
+        <a href="index.html">
+            Relarch
+        </a>
+    </h1>
+    <div class="m-nav">
+        <div class="o-grid__item">
+            <button class="c-hamburger c-hamburger--htx">
+                <span>toggle menu</span>
+            </button>
+        </div>
+    </div>
+    <div class="l-nav">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <div class="link-box">
+                        <span>about</span>
+                        <span>關於我</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="works.html">
+                    <div class="link-box">
+                        <span>works</span>
+                        <span>作品集</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.cakeresume.com/s--YrtP4-TPV7Tua_LaJxJHRg--/phoebeminguq" target="_blank">
+                    <div class="link-box">
+                        <span>resume</span>
+                        <span>個人履歷</span>
+                    </div>
+                </a>
+            </li>
+            <li style="display: none;">
+                <a href="contact.html">
+                    <div class="link-box">
+                        <span>contact</span>
+                        <span>聯絡方式</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+<script>
+//漢堡
+$(window).load(function(){
+    var toggles = document.querySelectorAll(".c-hamburger");
+    for (var i = toggles.length - 1; i >= 0; i--) {
+        var toggle = toggles[i];
+        toggleHandler(toggle);
+    };
+    function toggleHandler(toggle) {
+        toggle.addEventListener( "click", function(e) {
+            e.preventDefault();
+            if (this.classList.contains("is-active") === true) {
+                this.classList.remove("is-active");
+                // $(".side-nav-wrap").stop().animate({left:"-250px"},500);//點漢堡側邊欄左右滑動
+                $(".l-nav").slideUp();
+            }
+            else {
+                this.classList.add("is-active");
+                // $(".side-nav-wrap").stop().animate({left:"0"},500);//點漢堡側邊欄左右滑動
+                $(".l-nav").slideDown();
+            }
+        });
+    }
+});
+//漢堡視窗resize
+// $(window).resize(function(){
+// 	var w_Width = $(window).width();
+// 	if( w_Width >= 781){
+// 		$('.l-nav').removeAttr('style');
+// 		$('.c-hamburger').removeClass('is-active');
+// 	}
+// });
+
+</script>
+
+
+    <div class="l-about">
+        <div class="l-frame h-marginT60px">
+                <img src="../../img/relarch.jpg" alt="" class="e-relarchPhoto">
+                <div class="l-about_cont">
+                    <div class="l-about_name">
+                        <h2>蔡茗存</h2>
+                        <p>1995年生 銘傳大學數位媒體設計學系 應屆畢業</p>
+                    </div>
+                    <p class="l-about_story">
+                        大學時期主修2D動畫與特效，<br>
+                        而後因對網頁技術產生興趣而開始自學網頁設計。<br>
+                        <span class="h-hightlight">目前專注於網頁與app設計、html5、CSS(SCSS)。</span><br><br>
+                        
+                        大學時便積極利用暑假進入大小型公司擔任設計助理，學習職場第一線技能，<br>
+                        並榮幸獲得教授內推，在學時獲得接手進行校園內各式網站相關案子的機會，<br>
+                        出社會後更自發性至畫室上課持續精進自己的繪畫技巧。<br>
+                        目前也為了更使自己的觀念與技能更進一步<span class="h-hightlight">正在六角學院學習js</span>，<br>
+                        下一階段的學習目標為使自己具備更全面的網頁技術，<span class="h-hightlight">預計進修Vue.js</span>。<br><br>
+                        
+                        不只曾在大型企業中的十數人的團隊任職過，<br>
+                        更擁有在新創團隊擔任一人設計的工作經驗，<br>
+                        高中時更兩度擔任四校聯合漫研社迎新活動總召，有管理與教學十數人團隊的經驗。<br>
+                        是個<span class="h-hightlight">不論在任何團體都擁有高度適應力與合作能力的人才</span>。<br><br>
+                        
+                        可獨立進行前端切版作業，<br>
+                        接觸過遊戲美術設計，並與遊戲工程師配合製作過數款博弈遊戲。
+                    </p>
+                    <a href="" class="e-btn h-marginT60px">discover works</a>
+                </div>
+            </div>
+    </div>
+    <div class="l-skills">
+        <ul class=" l-frame">
+            <li>
+                <img src="../../img/icon-ui.svg">
+                <h3 class="l-skills_tit">網頁與app設計 web&app UI/UX design</h3>
+                <p>熟練使用sketch，並會使用adobe XD，能使用adobe XD內建功能製作protype以供參考閱覽。<br><span
+                        class="h-hightlight">經手過數個已上線網頁與app視覺設計<span>。</p>
+            </li>
+            <li>
+                <img src="../../img/icon-web.svg">
+                <h3 class="l-skills_tit">網頁前端切版 web dev</h3>
+                <p>可<span class="h-hightlight">獨立進行切版(RWD)作業</span>，主要使用html5、CSS（SCSS）、與基礎jquery，<br>
+                切版時<span class="h-hightlight">會一併思考SEO與後續維護問題，且擁有模組化觀念</span>，因此能配合文件無痛上手bootstrap或公司自建模組。<br>
+                習慣手刻，能靈活使用各種套件為網頁增添豐富度，且<span class="h-hightlight">多次與後端工程師（PHP）配合</span>，並有著後台建置（使用模組）經驗。
+                </p>
+            </li>
+            <li>
+                <img src="../../img/icon-illst.svg">
+                <h3 class="l-skills_tit">手繪能力與平面設計 illustration</h3>
+                <p>熟練使用wacom手繪版，能繪製與修改各式插畫與插圖。<br>
+                能靈活運用素材與自己繪製之插圖製作banner與各種宣傳圖。
+                </p>
+            </li>
+        </ul>
+    </div>
+    <p class="h-txt--c h-fz14 h-linehight--15 h-marginb30px">有興趣了解更多嗎？<br>
+    歡迎參觀我的作品</p>
+    <a href="" class="e-btn h-marginCenter">discover works</a>
+      <!-- template footer -->
+    <footer>
+        Copyright © 2020 Relarch Tsai All rights reserved
+    </footer>
+    <a href="" class="e-gotop gotop"><span>top</span></a>
+    <script>
+        $('.gotop').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                return false;
+            });
+    </script>
+
+
+
+</body>
+</html>

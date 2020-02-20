@@ -1,0 +1,91 @@
+//文字漸層
+@mixin txt_gradient{
+	color: transparent;
+	background: $gold;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+//外框漸層
+@mixin border_gradient($width,$border_img){
+	border-width: $width;
+ 	border-style: solid;
+ 	border-image: $gold;
+ 	border-image-slice: $border_img;
+	border-image-width: $border_img ;
+}
+
+//文字省略
+@mixin txt-ellipsis{
+	overflow: hidden;
+	word-wrap: break-word;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+@mixin dv{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@mixin dvt{
+	display: inline-block;
+	vertical-align:top;
+}
+
+@mixin dvb{
+	display: inline-block;
+	vertical-align:bottom;
+}
+
+
+//日期箭頭省略
+@mixin date_arrowNo{
+	-webkit-appearance:none;
+	&::-webkit-clear-button{opacity: 0;}
+	&::-webkit-inner-spin-button { visibility: hidden; }
+	&::-webkit-calendar-picker-indicator{opacity: 0; width: 10%;}
+}
+
+//placeholder
+@mixin placeholder{
+	&::-webkit-input-placeholder { color: $input-border; }
+	&input::-moz-placeholder { color: $input-border; }
+	&input::-moz-placeholder{color:$input-border;}
+	&-ms-input-placeholder{color: $input-border;}
+}
+
+
+//rwd
+@mixin banner1350{
+	@media (max-width: 1350px) {
+		@content;
+	}
+}
+
+@mixin banner1000{
+	@media (max-width: 1000px) {
+		@content;
+	}
+}
+
+
+@mixin mobile{
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin laptop{
+	@media (max-width: 1200px) {
+		@content;
+	}
+}
+@mixin phone{
+	@media (max-width: 480px) {
+		@content;
+	}
+}
