@@ -645,6 +645,7 @@ header h1 a {
   transition: 0.3s;
   padding: 10px;
   z-index: 3;
+  text-align: left;
 }
 .l-works_cont h3 {
   font-size: 18px;
