@@ -101,6 +101,7 @@ button {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 .l-frame_status {
   width: 1200px;
@@ -484,12 +485,12 @@ header h1 a {
   font-weight: bold;
 }
 .l-skills_tit:after {
-  content: "";
-  display: block;
-  background: #FFA92F;
-  margin: 0 0 0 30px;
-  width: 100px;
-  height: 6px;
+ content: "";
+ display: block;
+ background: #FFA92F;
+ margin: 10px 0 0 0;
+ width: 50px;
+ height: 6px;
 }
 .l-skills p {
   letter-spacing: 1px;
@@ -573,6 +574,7 @@ header h1 a {
   margin-top: 3rem;
   margin-bottom: 1rem;
   position: relative;
+  text-align: left;
 }
 .l-works_wrap h2:after {
   content: "";
