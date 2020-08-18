@@ -421,6 +421,7 @@ header h1 a {
   margin-left: 60px;
   padding-top: 100px;
   line-height: 1.7;
+  text-align: left;
 }
 .l-about_cont span {
   font-weight: bold;
