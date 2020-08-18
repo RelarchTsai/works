@@ -506,7 +506,7 @@ header h1 a {
   background: #fff;
   box-shadow: 0px 1px 10px rgba(211, 211, 211, 0.5);
 }
-.l-skills li:nth-child(1) {
+/* .l-skills li:nth-child(1) {
   margin-left: 10%;
 }
 .l-skills li:nth-child(2) {
@@ -514,7 +514,7 @@ header h1 a {
 }
 .l-skills li:nth-child(3) {
   margin-left: 30%;
-}
+} */
 .l-skills img {
   position: absolute;
   top: -68px;
