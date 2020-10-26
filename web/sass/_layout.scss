@@ -413,6 +413,7 @@ header{
 @include banner1000{
 	.l-skills{
 		li{width: 100%;
+			margin: 0 auto 40px;
 			&:nth-child(1),
 			&:nth-child(2),
 			&:nth-child(3){margin-left:0;}
@@ -438,7 +439,7 @@ header{
 		}
 		li{
 			padding-top:10px;
-			margin-bottom: 70px;
+			//margin-bottom: 70px;
 		}
 		&:before{
 			top:-80px;
@@ -554,6 +555,9 @@ header{
 		}
 		&_box{
 			width: 100%;
+			margin: 0 auto 30px;
+			&:nth-child(3n){margin-right: auto;}
+			&:nth-child(2n){margin-right: auto;}
 		}
 		&_cont{
 			opacity: 1;

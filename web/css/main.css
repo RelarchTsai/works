@@ -529,6 +529,7 @@ header h1 a {
 @media (max-width: 1000px) {
   .l-skills li {
     width: 100%;
+    margin: 0 auto 40px;
   }
   .l-skills li:nth-child(1), .l-skills li:nth-child(2), .l-skills li:nth-child(3) {
     margin-left: 0;
@@ -554,7 +555,6 @@ header h1 a {
   }
   .l-skills li {
     padding-top: 10px;
-    margin-bottom: 70px;
   }
   .l-skills:before {
     top: -80px;
@@ -675,6 +675,13 @@ header h1 a {
   }
   .l-works_box {
     width: 100%;
+    margin: 0 auto 30px;
+  }
+  .l-works_box:nth-child(3n) {
+    margin-right: auto;
+  }
+  .l-works_box:nth-child(2n) {
+    margin-right: auto;
   }
   .l-works_cont {
     opacity: 1;
